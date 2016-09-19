@@ -1,0 +1,33 @@
+{
+  "name": "vuejs-foundation-boilerplate",
+  "description": "A Vue.js project that utilizes Foundation 6.",
+  "author": "ericcirone <ecirone@gmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "webpack-dev-server --inline --hot --progress",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules --colors"
+  },
+  "dependencies": {
+    "vue": "^2.0.0-beta.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.4.1",
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-es2015": "^6.13.2",
+    "clean-webpack-plugin": "^0.1.10",
+    "cross-env": "^1.0.6",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^2.0.0-beta.4",
+    "file-loader": "^0.8.4",
+    "foundation-sites": "^6.2.3",
+    "motion-ui": "^1.2.2",
+    "node-sass": "^3.10.0",
+    "postcss-loader": "^0.13.0",
+    "script-loader": "^0.7.0",
+    "style-loader": "^0.13.1",
+    "vue-loader": "^9.2.2",
+    "webpack": "^2.1.0-beta.22",
+    "webpack-dev-server": "^2.1.0-beta.4"
+  }
+}
