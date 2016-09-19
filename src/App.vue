@@ -13,7 +13,7 @@
 export default {
   data () {
     return {
-      msg: 'Hello Vue 2.0!'
+      msg: 'Vue.js 2 | Foundation 6 | Webpack 2'
     }
   }
 }
