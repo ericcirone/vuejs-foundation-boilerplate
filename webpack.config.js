@@ -40,6 +40,11 @@ module.exports = {
             }
         }]
     },
+    vue: {
+        loaders: {
+            // sass: extractSCSS.extract(['css-loader', 'postcss-loader', 'sass-loader'])
+        }
+    },
     plugins: [
         extractSCSS,
         new CleanWebpackPlugin(['dist'], {})
