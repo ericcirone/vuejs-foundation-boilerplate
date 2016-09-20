@@ -30,7 +30,7 @@ module.exports = {
             exclude: /node_modules/
         }, {
             test: /\.(css|scss)$/,
-            loader: extractSCSS.extract(['css-loader', 'sass-loader']),
+            loader: extractSCSS.extract(['css-loader', 'postcss-loader', 'sass-loader']),
             exclude: /node_modules/
         }, {
             test: /\.(png|jpg|gif|svg)$/,
@@ -44,9 +44,9 @@ module.exports = {
         extractSCSS,
         new CleanWebpackPlugin(['dist'], {})
     ],
-    postcss: function () {
-        return [autoprefixer];
-    },
+    postcss: [autoprefixer({
+        browsers: ['last 2 versions']
+    })],
     sassLoader: {
         includePaths: [path.resolve(__dirname, "node_modules")]
     },
